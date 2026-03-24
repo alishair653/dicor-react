@@ -1,0 +1,114 @@
+.mz-btn {
+  appearance: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  border-radius: 999px;
+  padding: 12px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 120ms ease, background 200ms ease, border-color 200ms ease,
+    box-shadow 200ms ease, color 200ms ease, opacity 200ms ease;
+  user-select: none;
+}
+
+.mz-btn:active {
+  transform: translateY(1px);
+}
+
+.mz-btn:focus-visible {
+  outline: 3px solid rgba(43, 178, 163, 0.35);
+  outline-offset: 3px;
+}
+
+.mz-btnPrimary {
+  background: var(--brand-teal-2);
+  color: #ffffff;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 20px rgba(15, 118, 110, 0.18);
+}
+
+.mz-btnPrimary:hover {
+  background: var(--brand-teal-1);
+}
+
+.mz-btnSecondary {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+.mz-btnSecondary:hover {
+  border-color: rgba(15, 118, 110, 0.35);
+}
+
+.mz-btnOutline {
+  background: transparent;
+  border-color: rgba(15, 118, 110, 0.45);
+  color: var(--brand-teal-2);
+}
+
+.mz-btnOutline:hover {
+  background: rgba(15, 118, 110, 0.08);
+}
+
+.mz-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 118, 110, 0.06);
+}
+
+.mz-cardPad {
+  padding: 20px;
+}
+
+.mz-sectionHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.mz-sectionEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 12px;
+  color: var(--brand-teal-2);
+}
+
+.mz-sectionTitle {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.15;
+  color: var(--text-h);
+  font-weight: 900;
+}
+
+.mz-sectionSubtitle {
+  margin: 0;
+  color: var(--muted);
+  max-width: 720px;
+  line-height: 1.65;
+}
+
+.mz-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.1);
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  color: var(--brand-teal-2);
+  font-weight: 900;
+  font-size: 13px;
+}
+

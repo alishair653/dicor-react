@@ -1,0 +1,646 @@
+.mz-aboutBanner {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(135deg, #0f172a 0%, #111827 60%, #3b0b14 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mz-aboutBanner--photo {
+  background-image: linear-gradient(
+      135deg,
+      rgba(15, 23, 42, 0.9) 0%,
+      rgba(17, 24, 39, 0.85) 55%,
+      rgba(59, 11, 20, 0.82) 100%
+    ),
+    var(--mz-banner-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.mz-aboutBannerInner {
+  max-width: var(--container);
+  margin: 0 auto;
+  min-height: 250px;
+  padding: var(--space-8) var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.mz-aboutBannerLeft {
+  max-width: 620px;
+  min-width: 0;
+  flex: 1 1 280px;
+}
+
+.mz-aboutBannerTitle {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.02;
+  letter-spacing: -0.8px;
+  font-weight: 1000;
+}
+
+.mz-aboutBannerText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.75;
+  font-weight: 700;
+}
+
+.mz-aboutBannerCrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.mz-aboutBannerCrumbLink {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.mz-aboutBannerCrumbLink:hover {
+  color: #ffffff;
+}
+
+.mz-aboutBannerCrumbSep {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.mz-aboutBannerCrumbCurrent {
+  color: var(--brand-accent);
+}
+
+.mz-aboutTrustedSection {
+  padding-top: var(--space-8);
+}
+
+.mz-aboutTrustedGrid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.mz-aboutTrustedLeft {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.mz-aboutTrustedImageWrap {
+  position: relative;
+  background: #f7f8f9;
+  overflow: hidden;
+}
+
+.mz-aboutTrustedImageWrap::before {
+  content: '';
+  position: absolute;
+  top: -55%;
+  right: -20%;
+  width: 75%;
+  height: 110%;
+  background: rgba(43, 178, 163, 0.28);
+  transform: rotate(40deg);
+  z-index: 1;
+}
+
+.mz-aboutTrustedImage {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.mz-aboutTrustedExpCard {
+  background: #3b0b14;
+  color: #ffffff;
+  padding: var(--space-6);
+}
+
+.mz-aboutTrustedExpValue {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+.mz-aboutTrustedExpText {
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.mz-aboutTrustedEyebrow {
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 11px;
+  color: var(--brand-accent);
+  margin-bottom: 10px;
+}
+
+.mz-aboutTrustedTitle {
+  margin: 0 0 14px;
+  color: var(--text-h);
+  font-size: 58px;
+  line-height: 1.02;
+  letter-spacing: -0.8px;
+  font-weight: 1000;
+}
+
+.mz-aboutTrustedText {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+.mz-aboutTrustedButtons {
+  margin-top: var(--space-5);
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.mz-aboutTrustedButtons .mz-btnPrimary {
+  background: var(--brand-accent);
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+.mz-aboutTrustedButtons .mz-btnPrimary:hover {
+  background: #b62f51;
+}
+
+.mz-aboutTrustedButtons .mz-btnSecondary {
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
+  border-radius: 2px;
+}
+
+.mz-aboutTrustedButtons .mz-btnSecondary:hover {
+  background: #0b1220;
+  border-color: #0b1220;
+}
+
+.mz-aboutTrustedMiniGrid {
+  margin-top: var(--space-6);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: var(--space-5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.mz-aboutTrustedMiniItemSpan {
+  grid-column: 1 / -1;
+}
+
+.mz-aboutTrustedMiniIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: rgba(201, 58, 99, 0.14);
+  border: 1px solid rgba(201, 58, 99, 0.4);
+  color: var(--brand-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.mz-aboutTrustedMiniTitle {
+  color: var(--text-h);
+  font-size: 30px;
+  line-height: 1.05;
+  letter-spacing: -0.3px;
+  font-weight: 1000;
+  margin-bottom: 8px;
+}
+
+.mz-aboutTrustedMiniText {
+  color: var(--muted);
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.mz-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.mz-storySection {
+  padding-top: var(--space-7);
+}
+
+.mz-storyHeading {
+  margin: 0 0 var(--space-5);
+  color: var(--text-h);
+  font-size: 64px;
+  line-height: 1.02;
+  letter-spacing: -0.8px;
+  font-weight: 1000;
+}
+
+.mz-storyTimelineLine {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: var(--space-4);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: var(--space-4);
+  padding-top: 0;
+}
+
+.mz-storyYearBadge {
+  justify-self: start;
+  margin-top: -12px;
+  background: var(--brand-accent);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+}
+
+.mz-storyCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.mz-storyCard {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mz-storyCardBody {
+  padding: var(--space-6);
+}
+
+.mz-storyCardTitle {
+  color: var(--text-h);
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: -0.3px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+.mz-storyCardText {
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.mz-storyCardImage {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.mz-missionSpotlight {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(120deg, #1a0007 0%, #22000a 65%, #32000d 100%);
+  padding: var(--space-8) 0;
+}
+
+.mz-missionSpotlightInner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-7);
+  align-items: stretch;
+}
+
+.mz-missionSpotlightLeft {
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  padding-right: var(--space-6);
+}
+
+.mz-missionSpotlightEyebrow {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--brand-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 10px;
+  font-weight: 900;
+  margin-bottom: var(--space-4);
+}
+
+.mz-missionSpotlightTitle {
+  margin: 0 0 var(--space-5);
+  color: #ffffff;
+  font-size: 64px;
+  line-height: 1.02;
+  letter-spacing: -0.8px;
+  font-weight: 1000;
+  max-width: 760px;
+}
+
+.mz-missionSpotlightText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.8;
+  font-weight: 700;
+  max-width: 680px;
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mz-missionSpotlightCta {
+  margin-top: var(--space-5);
+}
+
+.mz-missionSpotlightBtn {
+  border: 0;
+  background: var(--brand-accent);
+  color: #ffffff;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px 24px;
+  cursor: pointer;
+}
+
+.mz-missionSpotlightBtn:hover {
+  background: #b62f51;
+}
+
+.mz-missionSpotlightBtn:focus-visible {
+  outline: 3px solid rgba(201, 58, 99, 0.35);
+  outline-offset: 3px;
+}
+
+.mz-missionSpotlightRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.mz-missionSpotlightImage {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  display: block;
+}
+
+.mz-missionSpotlightFounder {
+  margin-top: 14px;
+  background: rgba(201, 58, 99, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px var(--space-5) 18px;
+}
+
+.mz-missionSpotlightFounderRole {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 10px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.mz-missionSpotlightFounderName {
+  margin-top: 8px;
+  font-size: 38px;
+  line-height: 1.05;
+  letter-spacing: -0.4px;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+.mz-timelineItem {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.mz-timelineYear {
+  font-weight: 1000;
+  color: var(--brand-teal-2);
+  font-size: 28px;
+}
+
+.mz-timelineTitle {
+  font-weight: 1000;
+  color: var(--text-h);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.mz-timelineText {
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.mz-valuesGrid {
+  margin-top: var(--space-6);
+}
+
+.mz-valueCard {
+  text-align: left;
+}
+
+.mz-missionCta {
+  margin-top: var(--space-6);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mz-teamGrid {
+  margin-top: var(--space-6);
+}
+
+.mz-teamCard {
+  text-align: left;
+}
+
+.mz-teamName {
+  font-weight: 1000;
+  color: var(--text-h);
+  font-size: 18px;
+}
+
+.mz-teamRole {
+  margin-top: 8px;
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.mz-teamCta {
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+  .mz-missionSpotlightInner {
+    grid-template-columns: 1fr;
+  }
+
+  .mz-missionSpotlightLeft {
+    border-right: 0;
+    padding-right: 0;
+  }
+
+  .mz-missionSpotlightTitle {
+    font-size: 48px;
+  }
+
+  .mz-missionSpotlightImage {
+    height: 360px;
+  }
+
+  .mz-missionSpotlightFounderName {
+    font-size: 30px;
+  }
+
+  .mz-storyHeading {
+    font-size: 48px;
+  }
+
+  .mz-storyTimelineLine,
+  .mz-storyCards {
+    grid-template-columns: 1fr;
+  }
+
+  .mz-storyYearBadge {
+    margin-top: 0;
+  }
+
+  .mz-storyCardTitle {
+    font-size: 28px;
+  }
+
+  .mz-aboutTrustedGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mz-aboutTrustedTitle {
+    font-size: 44px;
+  }
+
+  .mz-aboutTrustedMiniTitle {
+    font-size: 24px;
+  }
+
+  .mz-aboutBannerInner {
+    min-height: 220px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .mz-aboutBannerTitle {
+    font-size: 44px;
+  }
+
+  .mz-timelineItem {
+    grid-template-columns: 1fr;
+  }
+
+  .mz-timelineYear {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mz-missionSpotlightInner {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
+
+  .mz-missionSpotlightTitle {
+    font-size: 36px;
+  }
+
+  .mz-missionSpotlightImage {
+    height: 250px;
+  }
+
+  .mz-missionSpotlightFounderName {
+    font-size: 24px;
+  }
+
+  .mz-missionSpotlightBtn {
+    width: 100%;
+  }
+
+  .mz-storyHeading {
+    font-size: 36px;
+  }
+
+  .mz-storyCardBody {
+    padding: var(--space-5);
+  }
+
+  .mz-storyCardTitle {
+    font-size: 24px;
+  }
+
+  .mz-storyCardImage {
+    height: 180px;
+  }
+
+  .mz-aboutTrustedImage {
+    height: 250px;
+  }
+
+  .mz-aboutTrustedExpValue {
+    font-size: 28px;
+  }
+
+  .mz-aboutTrustedTitle {
+    font-size: 34px;
+  }
+
+  .mz-aboutTrustedMiniGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mz-aboutTrustedButtons {
+    gap: var(--space-3);
+  }
+
+  .mz-aboutTrustedButtons .mz-btn {
+    width: 100%;
+  }
+
+  .mz-aboutBannerInner {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+    min-height: 190px;
+  }
+
+  .mz-aboutBannerTitle {
+    font-size: 36px;
+  }
+}
+

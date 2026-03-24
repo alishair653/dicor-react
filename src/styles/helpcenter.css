@@ -1,0 +1,681 @@
+.mz-helpIntroCard {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Help Center: FAQ band (banner + two columns) */
+.mz-helpFaqBand {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  max-width: 100vw;
+  background: #f6f5f3;
+  padding: var(--space-9) 0 var(--space-10);
+}
+
+.mz-helpFaqBand--soft {
+  background: #f9f9f9;
+}
+
+.mz-helpFaqBand--soft .mz-helpFaqAvatar {
+  border-color: #f9f9f9;
+}
+
+.mz-helpFaqInner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.mz-helpFaqGrid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.mz-helpFaqAside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.mz-helpFaqMedia {
+  background: #ebeae8;
+  overflow: hidden;
+}
+
+.mz-helpFaqImg {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+.mz-helpFaqImg--clip {
+  clip-path: polygon(0 0, calc(100% - 52px) 0, 100% 52px, 100% 100%, 0 100%);
+}
+
+.mz-helpFaqCtaBlock {
+  padding: 0 var(--space-1) 0 0;
+}
+
+.mz-helpFaqCtaTitle {
+  margin: 0 0 var(--space-3);
+  font-weight: 1000;
+  color: var(--text-h);
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+}
+
+.mz-helpFaqCtaText {
+  margin: 0 0 var(--space-5);
+  color: var(--muted);
+  line-height: 1.75;
+  font-weight: 650;
+  font-size: 14px;
+}
+
+.mz-helpFaqCtaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.mz-helpFaqExpertBtn {
+  border: 0;
+  cursor: pointer;
+  background: var(--brand-accent);
+  color: #ffffff;
+  font-weight: 1000;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 22px;
+  border-radius: 0;
+  font-family: inherit;
+}
+
+.mz-helpFaqExpertBtn:hover {
+  background: #b62f51;
+}
+
+.mz-helpFaqExpertBtn:focus-visible {
+  outline: 3px solid rgba(201, 58, 99, 0.4);
+  outline-offset: 3px;
+}
+
+.mz-helpFaqAvatars {
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+}
+
+.mz-helpFaqAvatar {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 3px solid #f6f5f3;
+  margin-left: -14px;
+  flex-shrink: 0;
+}
+
+.mz-helpFaqAvatar:first-child {
+  margin-left: 0;
+}
+
+.mz-helpFaqAvatar:nth-child(1) {
+  z-index: 3;
+}
+.mz-helpFaqAvatar:nth-child(2) {
+  z-index: 2;
+}
+.mz-helpFaqAvatar:nth-child(3) {
+  z-index: 1;
+}
+
+.mz-helpFaqMain {
+  padding-top: var(--space-1);
+}
+
+.mz-helpFaqEyebrow {
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 11px;
+  color: var(--brand-accent);
+  margin-bottom: 12px;
+}
+
+.mz-helpFaqTitle {
+  margin: 0 0 var(--space-6);
+  font-weight: 1000;
+  color: var(--text-h);
+  font-size: 34px;
+  line-height: 1.12;
+  letter-spacing: -0.4px;
+}
+
+.mz-helpFaqAccordion.mz-accordion {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.mz-helpFaqAccordion .mz-accordionItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+.mz-helpFaqAccordion .mz-accordionItem:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mz-helpFaqAccordion .mz-accordionBtn {
+  padding: var(--space-5) 0;
+  background: transparent;
+}
+
+.mz-helpFaqAccordion .mz-accordionBtn:hover {
+  background: transparent;
+}
+
+.mz-helpFaqAccordion .mz-accordionQuestion {
+  font-size: 15px;
+  padding-right: var(--space-3);
+}
+
+.mz-helpFaqAccordion .mz-accordionIcon {
+  width: auto;
+  height: auto;
+  min-width: 28px;
+  border-radius: 0;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 400;
+  background: transparent;
+  color: var(--brand-accent);
+}
+
+.mz-helpFaqAccordion .mz-accordionBtn[aria-expanded='true'] .mz-accordionIcon {
+  color: var(--text-h);
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.mz-helpFaqAccordion .mz-accordionPanelInner {
+  padding: 0 0 var(--space-5);
+  max-width: 560px;
+}
+
+@media (max-width: 1024px) {
+  .mz-helpFaqGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+  }
+
+  .mz-helpFaqTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mz-helpFaqInner {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
+
+  .mz-helpFaqImg {
+    height: 220px;
+  }
+
+  .mz-helpFaqTitle {
+    font-size: 24px;
+  }
+}
+
+.mz-accordion {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.mz-accordionItem {
+  border-bottom: 1px solid var(--border);
+}
+
+.mz-accordionItem:last-child {
+  border-bottom: 0;
+}
+
+.mz-accordionBtn {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: var(--space-4) var(--space-5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.mz-accordionBtn:hover {
+  background: rgba(15, 118, 110, 0.06);
+}
+
+.mz-accordionQuestion {
+  font-weight: 1000;
+  color: var(--text-h);
+  line-height: 1.3;
+}
+
+.mz-accordionIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 1000;
+  color: var(--brand-teal-2);
+  background: rgba(15, 118, 110, 0.08);
+}
+
+.mz-accordionPanel {
+  overflow: hidden;
+}
+
+.mz-accordionPanelInner {
+  padding: 0 var(--space-5) var(--space-4);
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+/* Help Center: dark topics grid */
+.mz-helpTopicsSection {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  max-width: 100vw;
+  background: #000000;
+  padding: var(--space-10) 0;
+}
+
+.mz-helpTopicsInner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.mz-helpTopicsHeader {
+  text-align: center;
+  margin-bottom: var(--space-9);
+}
+
+.mz-helpTopicsEyebrow {
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 11px;
+  color: #e31e24;
+  margin-bottom: 16px;
+}
+
+.mz-helpTopicsHeading {
+  margin: 0 auto;
+  max-width: 720px;
+  font-weight: 1000;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
+}
+
+.mz-helpTopicsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-9) var(--space-7);
+  align-items: start;
+}
+
+.mz-helpTopicsCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 0;
+}
+
+.mz-helpTopicsThumb {
+  width: 100%;
+  max-width: min(300px, 100%);
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mz-helpTopicsIconWrap {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #e31e24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-5);
+  flex-shrink: 0;
+}
+
+.mz-helpTopicsIcon {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+}
+
+.mz-helpTopicsTitle {
+  margin: 0 0 var(--space-3);
+  font-weight: 1000;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.mz-helpTopicsDesc {
+  margin: 0;
+  max-width: 300px;
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.65;
+  font-weight: 650;
+}
+
+@media (max-width: 900px) {
+  .mz-helpTopicsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-8) var(--space-5);
+  }
+
+  .mz-helpTopicsHeading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .mz-helpTopicsInner {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
+
+  .mz-helpTopicsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .mz-helpTopicsHeading {
+    font-size: 26px;
+  }
+}
+
+/* Help Center: contact band (form + image) */
+.mz-helpContactBand {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  max-width: 100vw;
+  background: #f9f9f9;
+  padding: var(--space-9) 0 var(--space-10);
+}
+
+.mz-helpContactBand--white {
+  background: #ffffff;
+}
+
+.mz-helpContactBandInner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.mz-helpContactSplit {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.mz-helpContactEyebrow {
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 11px;
+  color: #c41230;
+  margin-bottom: 14px;
+}
+
+.mz-helpContactTitle {
+  margin: 0 0 var(--space-6);
+  font-weight: 1000;
+  color: var(--text-h);
+  font-size: 38px;
+  line-height: 1.08;
+  letter-spacing: -0.5px;
+}
+
+.mz-helpForm {
+  max-width: 520px;
+}
+
+.mz-helpFormField {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: var(--space-5);
+}
+
+.mz-helpFormLabel {
+  font-weight: 1000;
+  color: var(--text-h);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mz-helpFormLabelAsterisk {
+  color: #c41230;
+  font-weight: 1000;
+  letter-spacing: 0;
+}
+
+.mz-helpFormInput,
+.mz-helpFormTextarea {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  outline: none;
+  background: #ececec;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 650;
+  font-size: 14px;
+  transition:
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.mz-helpFormInput::placeholder,
+.mz-helpFormTextarea::placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.mz-helpFormTextarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+.mz-helpFormInput:focus,
+.mz-helpFormTextarea:focus {
+  background: #e8e8e8;
+  box-shadow: 0 0 0 4px rgba(196, 18, 48, 0.12);
+}
+
+.mz-helpFormStatus {
+  margin-bottom: var(--space-4);
+  font-weight: 1000;
+  font-size: 14px;
+}
+
+.mz-helpFormStatusOk {
+  color: #0f766e;
+}
+
+.mz-helpFormStatusErr {
+  color: var(--brand-accent);
+}
+
+.mz-helpFormSubmit {
+  margin-top: var(--space-2);
+  border: 0;
+  cursor: pointer;
+  background: #c41230;
+  color: #ffffff;
+  font-weight: 1000;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  border-radius: 0;
+  font-family: inherit;
+}
+
+.mz-helpFormSubmit:hover {
+  background: #a30f28;
+}
+
+.mz-helpFormSubmit:focus-visible {
+  outline: 3px solid rgba(196, 18, 48, 0.35);
+  outline-offset: 3px;
+}
+
+.mz-helpContactMedia {
+  background: #e8e8e8;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.mz-helpContactImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+}
+
+.mz-helpContactImg--clipTl {
+  clip-path: polygon(0 52px, 52px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.mz-helpContactRows {
+  padding-top: var(--space-2);
+}
+
+.mz-helpContactRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mz-helpContactRow:last-child {
+  border-bottom: 0;
+}
+
+.mz-helpContactRowIcon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background: #c41230;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mz-helpContactRowBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.mz-helpContactRowLabel {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.mz-helpContactRowValue {
+  font-weight: 1000;
+  font-size: 22px;
+  color: var(--text-h);
+  text-decoration: none;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.mz-helpContactRowValue:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 1024px) {
+  .mz-helpContactSplit {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .mz-helpForm {
+    max-width: none;
+  }
+
+  .mz-helpContactTitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mz-helpContactBandInner {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
+
+  .mz-helpContactTitle {
+    font-size: 26px;
+  }
+
+  .mz-helpContactImg {
+    height: 240px;
+  }
+
+  .mz-helpContactRowValue {
+    font-size: 18px;
+  }
+}
+

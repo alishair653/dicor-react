@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+:root {
+  /* Layout tokens */
+  --container: 1140px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  --space-1: 6px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 48px;
+  --space-9: 64px;
+  --space-10: 80px;
+
+  /* Breakpoints */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+
+  /* Brand palette (M Zuniga Concrete) */
+  --brand-teal-1: #2bb2a3;
+  --brand-teal-2: #0f766e;
+  --brand-mint: #bff7e8;
+  --brand-accent: #c93a63;
+
+  /* Base colors */
+  --ink: #0f172a;
+  --muted: #6b7280;
+  --surface: #ffffff;
+  --surface-2: #f3f4f6;
+
+  /* Borders */
+  --border: rgba(15, 23, 42, 0.12);
+
+  /* Useful derived tokens */
+  --bg: var(--surface);
+  --text: var(--muted);
+  --text-h: var(--ink);
+  --code-bg: var(--surface-2);
+
+  --accent: var(--brand-teal-2);
+  --accent-bg: rgba(15, 118, 110, 0.1);
+  --accent-border: rgba(15, 118, 110, 0.5);
+  --social-bg: rgba(243, 244, 246, 0.65);
+
+  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: 'Atkinson Hyperlegible', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --heading: 'Atkinson Hyperlegible', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
