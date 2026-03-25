@@ -62,6 +62,23 @@
   align-items: center;
 }
 
+.mz-notFoundLogo {
+  display: inline-flex;
+  margin-bottom: var(--space-4);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.15s ease;
+}
+
+.mz-notFoundLogo:hover {
+  transform: scale(1.03);
+}
+
+.mz-notFoundLogoImg {
+  height: 88px;
+  max-width: min(400px, 94vw);
+}
+
 .mz-notFoundVisual {
   margin: 0;
   border-radius: var(--radius-lg);

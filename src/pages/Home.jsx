@@ -14,6 +14,7 @@ import {
 
 import { siteInfo } from '../data/siteInfo'
 import { siteImages, cssUrl } from '../data/siteImages'
+import { copy } from '../data/siteCopy'
 
 import '../styles/home.css'
 
@@ -575,10 +576,7 @@ export default function Home() {
               <br />
               Precision
             </h2>
-            <p className="mz-contactExpertiseText">
-              Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est
-              habitasse augue. Interdum non quam at ut fermentum cras.
-            </p>
+            <p className="mz-contactExpertiseText">{copy.paragraphLong}</p>
 
             <div className="mz-contactExpertiseButtons">
               <button

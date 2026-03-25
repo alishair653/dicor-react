@@ -19,7 +19,7 @@
   min-height: 520px;
 }
 
-/* Hero ko header ke bilkul neeche "touch" karne ke liye mz-section ka padding remove */
+/* Remove default section padding so the hero sits flush under the header */
 .mz-hero.mz-section {
   padding-top: 0;
   padding-bottom: 0;
@@ -349,7 +349,7 @@
   margin-top: var(--space-5);
 }
 
-/* Services page: banner ke baad showcase (header + clipped image cards) */
+/* Services page: showcase band below the page banner (header + clipped image cards) */
 .mz-servicesShowcaseSection {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);

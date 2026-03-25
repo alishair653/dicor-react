@@ -3,6 +3,7 @@ import { FaShieldAlt, FaUserFriends } from 'react-icons/fa'
 import PageBanner from '../components/layout/PageBanner'
 
 import { siteImages } from '../data/siteImages'
+import { copy } from '../data/siteCopy'
 
 import '../styles/home.css'
 import '../styles/about.css'
@@ -10,14 +11,12 @@ import '../styles/about.css'
 const aboutData = {
   pageHero: {
     title: 'About Us',
-    subtitle:
-      'Faucibus ut accumsan venenatis ultricies elementum amet ut quis eu. Adipiscing pretium lorem libero id viverra ultrices.'
+    subtitle: copy.pageIntro
   },
   trusted: {
     eyebrow: 'Trusted Concrete Experts',
     title: 'Precision, Durability, And Innovation In Every Structure.',
-    text:
-      'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.'
+    text: copy.paragraphLong
   },
   story: {
     eyebrow: 'Our Story',
@@ -25,22 +24,19 @@ const aboutData = {
       {
         year: '2010',
         title: 'Establishing Our Roots',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est.',
+        text: copy.story2010,
         image: siteImages.aboutStory[0]
       },
       {
         year: '2015',
         title: 'Innovation & Growth',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est.',
+        text: copy.story2015,
         image: siteImages.aboutStory[1]
       },
       {
         year: '2023',
         title: 'A Trusted Name In Concrete',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est.',
+        text: copy.story2023,
         image: siteImages.aboutStory[2]
       }
     ]
@@ -54,27 +50,27 @@ const aboutData = {
   values: [
     {
       title: 'Commitment To Quality',
-      text: 'Sodales sem sed sed massa leo urna faucibus in cursus. Phasellus sit duis vitae massa.'
+      text: copy.valueQuality
     },
     {
       title: 'Customer-Centric Approach',
-      text: 'Sodales sem sed sed massa leo urna faucibus in cursus. Phasellus sit duis vitae massa.'
+      text: copy.valueCustomer
     },
     {
       title: 'Innovation & Technology',
-      text: 'Sodales sem sed sed massa leo urna faucibus in cursus. Phasellus sit duis vitae massa.'
+      text: copy.valueInnovation
     },
     {
       title: 'Safety & Compliance',
-      text: 'Sodales sem sed sed massa leo urna faucibus in cursus. Phasellus sit duis vitae massa.'
+      text: copy.valueSafety
     },
     {
       title: 'Sustainability & Responsibility',
-      text: 'Sodales sem sed sed massa leo urna faucibus in cursus. Phasellus sit duis vitae massa.'
+      text: copy.valueSustainability
     },
     {
       title: 'Reliability & Integrity',
-      text: 'Sodales sem sed sed massa leo urna faucibus in cursus. Phasellus sit duis vitae massa.'
+      text: copy.valueReliability
     }
   ],
   team: {
@@ -113,10 +109,7 @@ export default function AboutUs() {
 
             <div className="mz-aboutTrustedExpCard">
               <div className="mz-aboutTrustedExpValue">10 + Years Of Experience</div>
-              <div className="mz-aboutTrustedExpText">
-                Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est
-                habitasse augue.
-              </div>
+              <div className="mz-aboutTrustedExpText">{copy.experienceCard}</div>
             </div>
           </div>
 
@@ -140,9 +133,7 @@ export default function AboutUs() {
                   <FaShieldAlt size={14} />
                 </div>
                 <div className="mz-aboutTrustedMiniTitle">Reliable & Durable</div>
-                <div className="mz-aboutTrustedMiniText">
-                  Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est.
-                </div>
+                <div className="mz-aboutTrustedMiniText">{copy.miniReliable}</div>
               </div>
 
               <div className="mz-aboutTrustedMiniItem">
@@ -150,9 +141,7 @@ export default function AboutUs() {
                   <FaUserFriends size={14} />
                 </div>
                 <div className="mz-aboutTrustedMiniTitle">Expert Team</div>
-                <div className="mz-aboutTrustedMiniText">
-                  Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est.
-                </div>
+                <div className="mz-aboutTrustedMiniText">{copy.miniTeam}</div>
               </div>
             </div>
           </div>

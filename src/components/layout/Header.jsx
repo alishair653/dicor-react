@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { FaBars, FaTimes, FaPhone } from 'react-icons/fa'
 import Button from '../ui/Button'
+import ClientLogo from '../brand/ClientLogo'
 import { siteInfo } from '../../data/siteInfo'
 import '../../styles/shell.css'
 
@@ -13,8 +14,7 @@ const mainNav = [
 
 const pagesDropdown = [
   { to: '/projects', label: 'Projects' },
-  { to: '/projects', label: 'Project Details' },
-  { to: '/pricing', label: 'Project Pricing' },
+  { to: '/pricing', label: 'Pricing' },
   { to: '/help-center', label: 'Help Center' }
 ]
 
@@ -47,8 +47,8 @@ export default function Header() {
   return (
     <header className="mz-header">
       <div className="mz-container mz-headerRow">
-        <NavLink to="/" className="mz-brand" aria-label={siteInfo.businessName}>
-          <span className="mz-brandTop">{siteInfo.businessName}</span>
+        <NavLink to="/" className="mz-brand mz-brandLockup" aria-label={siteInfo.businessName}>
+          <ClientLogo className="mz-headerLogo" priority />
         </NavLink>
 
         <nav className="mz-nav" aria-label="Primary">
@@ -133,6 +133,9 @@ export default function Header() {
           role="dialog"
           aria-label="Mobile navigation"
         >
+          <div className="mz-mobileMenuBrand">
+            <ClientLogo className="mz-mobileMenuLogo" />
+          </div>
           {mainNav.map((item) => (
             <NavLink
               key={item.to}

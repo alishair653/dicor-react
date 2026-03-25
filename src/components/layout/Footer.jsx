@@ -1,4 +1,4 @@
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import ClientLogo from '../brand/ClientLogo'
 
 import { siteInfo } from '../../data/siteInfo'
 
@@ -9,25 +9,13 @@ export default function Footer() {
     <footer className="mz-footer">
       <div className="mz-container mz-footerGrid">
         <div className="mz-footerCol">
-          <div className="mz-footerBrand" aria-label={siteInfo.businessName}>
-            {siteInfo.businessName}
+          <div className="mz-footerBrandLockup">
+            <ClientLogo className="mz-footerLogo" />
           </div>
           <p className="mz-footerTextSmall mz-footerOwner">Owner: {siteInfo.ownerName}</p>
           <p className="mz-footerText">
             Concrete pouring services and reliable construction solutions.
           </p>
-
-          <div className="mz-footerSocial" aria-label="Social links">
-            <a className="mz-footerSocialLink" href="#" aria-label="Facebook">
-              <FaFacebookF size={16} />
-            </a>
-            <a className="mz-footerSocialLink" href="#" aria-label="Twitter">
-              <FaTwitter size={16} />
-            </a>
-            <a className="mz-footerSocialLink" href="#" aria-label="LinkedIn">
-              <FaLinkedinIn size={16} />
-            </a>
-          </div>
         </div>
 
         <div className="mz-footerCol">
@@ -44,8 +32,18 @@ export default function Footer() {
               </a>
             </li>
             <li>
+              <a className="mz-footerLink" href="/services">
+                Services
+              </a>
+            </li>
+            <li>
               <a className="mz-footerLink" href="/projects">
                 Projects
+              </a>
+            </li>
+            <li>
+              <a className="mz-footerLink" href="/pricing">
+                Pricing
               </a>
             </li>
             <li>
@@ -53,30 +51,9 @@ export default function Footer() {
                 Help Center
               </a>
             </li>
-          </ul>
-        </div>
-
-        <div className="mz-footerCol">
-          <div className="mz-footerTitle">Resources</div>
-          <ul className="mz-footerList">
             <li>
-              <a className="mz-footerLink" href="#">
-                Construction Tips
-              </a>
-            </li>
-            <li>
-              <a className="mz-footerLink" href="#">
-                Safety Standards
-              </a>
-            </li>
-            <li>
-              <a className="mz-footerLink" href="#">
-                Concrete Pouring Guide
-              </a>
-            </li>
-            <li>
-              <a className="mz-footerLink" href="#">
-                Maintenance Guide
+              <a className="mz-footerLink" href="/contact-us">
+                Contact
               </a>
             </li>
           </ul>
@@ -112,16 +89,7 @@ export default function Footer() {
 
       <div className="mz-container mz-footerBottom">
         <div className="mz-footerCopy">Copyright © {year} {siteInfo.businessName}</div>
-        <div className="mz-footerPolicy">
-          <a className="mz-footerLink" href="#">
-            Terms of Use
-          </a>
-          <a className="mz-footerLink" href="#">
-            Privacy Policy
-          </a>
-        </div>
       </div>
     </footer>
   )
 }
-

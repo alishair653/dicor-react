@@ -4,6 +4,7 @@ import { FaFileAlt, FaLayerGroup, FaCheckCircle } from 'react-icons/fa'
 import PageBanner from '../components/layout/PageBanner'
 
 import { siteImages } from '../data/siteImages'
+import { copy } from '../data/siteCopy'
 
 import '../styles/home.css'
 import '../styles/about.css'
@@ -18,8 +19,7 @@ const pricingData = {
     {
       plan: 'Basic Plan',
       price: '$2,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bestFor: 'Small Residential Projects',
       bullets: [
         'Standard Concrete Mixing',
@@ -31,8 +31,7 @@ const pricingData = {
     {
       plan: 'Professional Plan',
       price: '$5,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bestFor: 'Mid-Sized Commercial & Residential Projects',
       bullets: [
         'High-Strength Concrete Mix',
@@ -44,8 +43,7 @@ const pricingData = {
     {
       plan: 'Enterprise Plan',
       price: '$8,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bestFor: 'Large Scale Commercial Projects',
       bullets: [
         'Custom Concrete Solutions',
@@ -61,18 +59,15 @@ const pricingData = {
     steps: [
       {
         title: 'Consultation & Planning',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.'
+        text: copy.processConsultation
       },
       {
         title: 'Concrete Pouring',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.'
+        text: copy.processPour
       },
       {
         title: 'Final Inspection',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.'
+        text: copy.processInspection
       }
     ],
     cta: 'Get Started'
@@ -248,10 +243,7 @@ export default function Pricing() {
               <div className="mz-testimonialsHeading">
                 <div className="mz-testimonialsEyebrow">What our clients say</div>
                 <h2 className="mz-testimonialsTitle">Real Experiences From Satisfied Customers</h2>
-                <p className="mz-testimonialsSubtitle">
-                  Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse
-                  augue.
-                </p>
+                <p className="mz-testimonialsSubtitle">{copy.testimonialBand}</p>
               </div>
 
               <div className="mz-testimonialsList">

@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import PageBanner from '../components/layout/PageBanner'
 
 import { siteImages } from '../data/siteImages'
+import { copy } from '../data/siteCopy'
 
 import '../styles/home.css'
 
@@ -12,8 +13,7 @@ const servicesData = {
   intro: {
     eyebrow: 'Services',
     title: 'Services',
-    subtitle:
-      'Faucibus ut accumsan venenatis ultricies elementum amet ut quis eu. Adipiscing pretium lorem libero id viverra ultrices.'
+    subtitle: copy.pageIntro
   },
   servicesSection: {
     heading: 'Tailored Concrete Solutions For Every Project Need'
@@ -116,8 +116,7 @@ const servicesData = {
     {
       plan: 'Basic Plan',
       price: '$2,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bullets: [
         'Standard Concrete Mixing',
         'Driveway & Walkway Installation',
@@ -128,8 +127,7 @@ const servicesData = {
     {
       plan: 'Professional Plan',
       price: '$5,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bullets: [
         'High-Strength Concrete Mix',
         'Reinforced Slabs & Flooring',
@@ -140,8 +138,7 @@ const servicesData = {
     {
       plan: 'Enterprise Plan',
       price: '$8,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bullets: [
         'Custom Concrete Solutions',
         'Driveway & Walkway Installation',
@@ -405,10 +402,7 @@ export default function Services() {
               <div className="mz-testimonialsHeading">
                 <div className="mz-testimonialsEyebrow">What our clients say</div>
                 <h2 className="mz-testimonialsTitle">Real Experiences From Satisfied Customers</h2>
-                <p className="mz-testimonialsSubtitle">
-                  Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse
-                  augue.
-                </p>
+                <p className="mz-testimonialsSubtitle">{copy.testimonialBand}</p>
               </div>
 
               <div className="mz-testimonialsList">

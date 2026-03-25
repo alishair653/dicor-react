@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom'
+
+import ClientLogo from '../brand/ClientLogo'
 import { cssUrl } from '../../data/siteImages'
 
 export default function PageBanner({ title, subtitle, currentLabel, backgroundImage }) {
@@ -13,7 +16,12 @@ export default function PageBanner({ title, subtitle, currentLabel, backgroundIm
     >
       <div className="mz-aboutBannerInner">
         <div className="mz-aboutBannerLeft">
-          <h1 className="mz-aboutBannerTitle">{title}</h1>
+          <div className="mz-aboutBannerTitleRow">
+            <Link to="/" className="mz-aboutBannerLogoLink" aria-label="Home">
+              <ClientLogo className="mz-aboutBannerLogo" />
+            </Link>
+            <h1 className="mz-aboutBannerTitle">{title}</h1>
+          </div>
           <p className="mz-aboutBannerText">{subtitle}</p>
         </div>
 

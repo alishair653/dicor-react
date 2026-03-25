@@ -16,6 +16,7 @@ import '../styles/about.css'
 
 import { siteInfo } from '../data/siteInfo'
 import { siteImages } from '../data/siteImages'
+import { copy } from '../data/siteCopy'
 
 const projectsData = {
   intro: {
@@ -54,8 +55,7 @@ const projectsData = {
     {
       plan: 'Basic Plan',
       price: '$2,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bestFor: 'Small Residential Projects',
       bullets: [
         'Standard Concrete Mixing',
@@ -67,8 +67,7 @@ const projectsData = {
     {
       plan: 'Professional Plan',
       price: '$5,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bestFor: 'Mid-Sized Commercial & Residential Projects',
       bullets: [
         'High-Strength Concrete Mix',
@@ -80,8 +79,7 @@ const projectsData = {
     {
       plan: 'Enterprise Plan',
       price: '$8,500',
-      desc:
-        'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.',
+      desc: copy.paragraphMedium,
       bestFor: 'Large Scale Commercial Projects',
       bullets: [
         'Custom Concrete Solutions',
@@ -97,26 +95,22 @@ const projectsData = {
     steps: [
       {
         title: 'Consultation & Planning',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.'
+        text: copy.processConsultation
       },
       {
         title: 'Concrete Pouring',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.'
+        text: copy.processPour
       },
       {
         title: 'Final Inspection',
-        text:
-          'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.'
+        text: copy.processInspection
       }
     ],
     cta: 'Get Started'
   },
   expertise: {
     eyebrow: 'YOUR PROJECT, OUR EXPERTISE',
-    text:
-      'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.',
+    text: copy.paragraphLong,
     image: siteImages.expertiseAside,
     bulletsLeft: [
       'HIGH-QUALITY MATERIALS',

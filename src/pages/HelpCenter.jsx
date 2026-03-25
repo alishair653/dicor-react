@@ -20,12 +20,12 @@ import '../styles/about.css'
 
 import { siteInfo } from '../data/siteInfo'
 import { siteImages } from '../data/siteImages'
+import { copy } from '../data/siteCopy'
 
 const faqData = [
   {
     question: 'What Services Do You Offer?',
-    answer:
-      'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras. We provide tailored concrete solutions including pouring, foundations, driveways, and repair.'
+    answer: copy.faqServicesFull
   },
   {
     question: 'How Long Does Concrete Take To Dry?',
@@ -47,8 +47,7 @@ const faqData = [
 const helpFaqAside = {
   image: siteImages.helpFaqAside,
   title: 'Still Have Questions?',
-  text:
-    'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue. Interdum non quam at ut fermentum cras.',
+  text: copy.stillHaveQuestions,
   avatars: siteImages.faqAvatarRow
 }
 
@@ -56,8 +55,7 @@ const helpContactAside = {
   image: siteImages.helpAside
 }
 
-const helpTopicsDesc =
-  'Quis vitae eget in morbi. Sollicitudin sed tempus et magnis habitant est habitasse augue.'
+const helpTopicsDesc = copy.helpTopicBlurb
 
 const helpTopics = [
   { title: 'General Information', Icon: FaBookOpen, image: siteImages.helpTopics[0] },
