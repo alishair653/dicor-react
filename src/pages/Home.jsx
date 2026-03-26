@@ -2,13 +2,13 @@ import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
 import SectionHeading from '../components/ui/SectionHeading'
 import Badge from '../components/ui/Badge'
+import VideoHero from '../components/VideoHero'
 import {
   FaHammer,
   FaShieldAlt,
   FaUserFriends,
   FaDollarSign,
   FaCogs,
-  FaYoutube,
   FaPhone
 } from 'react-icons/fa'
 
@@ -26,7 +26,8 @@ const homeData = {
     { value: '0 +', label: 'Projects Completed' }
   ],
   video: {
-    url: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'
+    url: '/site-video.mp4',
+    poster: siteImages.videoCard
   },
   features: [
     {
@@ -450,36 +451,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5.x Video link */}
-      <section className="mz-videoLinkSection" aria-label="Video">
-        <div className="mz-videoLinkInner">
-          <a
-            className="mz-videoLinkCard"
-            href={homeData.video.url}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="View video"
-            style={{ '--mz-video-card-bg': cssUrl(siteImages.videoCard) }}
-          >
-            <div className="mz-videoLinkTop">
-              <div className="mz-videoLinkLabel">Featured video</div>
-              <div className="mz-videoLinkActions" aria-hidden="true">
-                <span>Watch Later</span>
-                <span>Share</span>
-              </div>
-            </div>
-
-            <div className="mz-videoLinkCenter">
-              <div className="mz-videoLinkChoose">
-                Choose{' '}
-                <span className="mz-videoLinkYoutube">
-                  <FaYoutube size={22} />
-                </span>{' '}
-                our video
-              </div>
-              <div className="mz-videoLinkUnderline" aria-hidden="true" />
-            </div>
-          </a>
+      {/* 5.x Featured video (inline player) */}
+      <section className="mz-videoShowcaseSection" aria-label="Featured video">
+        <div className="mz-videoShowcaseInner">
+          <div className="mz-videoShowcaseHeader">
+            <div className="mz-videoShowcaseEyebrow">Featured Video</div>
+            <h2 className="mz-videoShowcaseTitle">Watch Our Work In Action</h2>
+            <p className="mz-videoShowcaseText">
+              Press play to watch directly on this page.
+            </p>
+          </div>
+          <VideoHero
+            posterSrc={homeData.video.poster}
+            videoUrl={homeData.video.url}
+            ariaLabel="Play featured video"
+          />
         </div>
       </section>
 

@@ -125,7 +125,7 @@ const projectsData = {
   },
   video: {
     poster: siteImages.videoHeroPoster,
-    url: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'
+    url: '/site-video.mp4'
   }
 }
 
@@ -199,6 +199,7 @@ export default function Projects() {
         posterSrc={projectsData.video.poster}
         videoUrl={projectsData.video.url}
         ariaLabel="Play project showcase video"
+        fullBleed
       />
 
       {/* 7.3 Pricing — dark band (screenshot layout) */}

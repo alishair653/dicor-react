@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { FaPlay } from 'react-icons/fa'
 
 function toEmbedUrl(url) {
@@ -19,75 +19,58 @@ function toEmbedUrl(url) {
   return ''
 }
 
+function isLocalVideo(url) {
+  if (!url || typeof url !== 'string') return false
+  return /\.(mp4|webm|ogg|mov|m4v)$/i.test(url)
+}
+
 export default function VideoHero({
   posterSrc,
   videoUrl,
-  ariaLabel = 'Play video'
+  ariaLabel = 'Play video',
+  fullBleed = false
 }) {
-  const [open, setOpen] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(false)
   const embedUrl = toEmbedUrl(videoUrl)
-
-  useEffect(() => {
-    if (!open) return
-    const onKey = (e) => {
-      if (e.key === 'Escape') setOpen(false)
-    }
-    window.addEventListener('keydown', onKey)
-    const prev = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    return () => {
-      window.removeEventListener('keydown', onKey)
-      document.body.style.overflow = prev
-    }
-  }, [open])
+  const localVideo = isLocalVideo(videoUrl)
+  const canPlay = Boolean(embedUrl || localVideo)
+  const heroClass = fullBleed ? 'mz-videoHero mz-videoHero--fullBleed' : 'mz-videoHero'
 
   return (
-    <section className="mz-videoHero" aria-label="Video">
+    <section className={heroClass} aria-label="Video">
       <div className="mz-videoHeroMedia">
-        <img className="mz-videoHeroImg" src={posterSrc} alt="" loading="lazy" />
-        <div className="mz-videoHeroScrim" aria-hidden />
-        <button
-          type="button"
-          className="mz-videoHeroPlay"
-          onClick={() => embedUrl && setOpen(true)}
-          aria-label={ariaLabel}
-          disabled={!embedUrl}
-        >
-          <FaPlay className="mz-videoHeroPlayGlyph" aria-hidden />
-        </button>
-      </div>
-
-      {open && embedUrl ? (
-        <div
-          className="mz-videoHeroModal"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Video player"
-          onClick={() => setOpen(false)}
-        >
-          <div
-            className="mz-videoHeroModalBox"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              type="button"
-              className="mz-videoHeroModalClose"
-              onClick={() => setOpen(false)}
-              aria-label="Close video"
-            >
-              ×
-            </button>
-            <div className="mz-videoHeroIframeWrap">
+        {isPlaying && canPlay ? (
+          <div className="mz-videoHeroIframeWrap">
+            {embedUrl ? (
               <iframe
                 title="Video"
                 src={embedUrl}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowFullScreen
               />
-            </div>
+            ) : (
+              <video controls autoPlay playsInline style={{ width: '100%', height: '100%' }}>
+                <source src={videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
           </div>
-        </div>
-      ) : null}
+        ) : (
+          <>
+            <img className="mz-videoHeroImg" src={posterSrc} alt="" loading="lazy" />
+            <div className="mz-videoHeroScrim" aria-hidden />
+            <button
+              type="button"
+              className="mz-videoHeroPlay"
+              onClick={() => canPlay && setIsPlaying(true)}
+              aria-label={ariaLabel}
+              disabled={!canPlay}
+            >
+              <FaPlay className="mz-videoHeroPlayGlyph" aria-hidden />
+            </button>
+          </>
+        )}
+      </div>
     </section>
   )
 }
