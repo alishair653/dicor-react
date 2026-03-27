@@ -198,7 +198,7 @@ export default function AboutUs() {
             <img
               className="mz-missionSpotlightImage"
               src={siteImages.aboutMission}
-              alt=""
+              alt={`${aboutData.team.people[0].name}, ${aboutData.team.people[0].role}`}
               loading="lazy"
             />
             <div className="mz-missionSpotlightFounder">

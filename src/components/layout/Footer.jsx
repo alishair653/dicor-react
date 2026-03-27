@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
           <p className="mz-footerTextSmall mz-footerOwner">Owner: {siteInfo.ownerName}</p>
           <p className="mz-footerText">
-            Concrete pouring services and reliable construction solutions.
+            Local concrete and flatwork for driveways, patios, and small jobs.
           </p>
         </div>
 
@@ -39,11 +39,6 @@ export default function Footer() {
             <li>
               <a className="mz-footerLink" href="/projects">
                 Projects
-              </a>
-            </li>
-            <li>
-              <a className="mz-footerLink" href="/pricing">
-                Pricing
               </a>
             </li>
             <li>
@@ -80,7 +75,7 @@ export default function Footer() {
             </li>
             <li>
               <span className="mz-footerTextSmall">
-                Serving residential and commercial concrete projects.
+                Serving homeowners and small businesses in our area.
               </span>
             </li>
           </ul>

@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import {
   FaBookOpen,
   FaCalendarAlt,
+  FaClipboardList,
   FaCreditCard,
   FaCog,
-  FaDollarSign,
   FaEnvelope,
   FaPhone,
   FaTools
@@ -35,7 +35,7 @@ const faqData = [
   {
     question: 'What Is The Average Cost Of A Concrete Project?',
     answer:
-      'Pricing depends on project scope, finishing level, reinforcement needs, and warranty coverage. We help you choose the right plan for your requirements.'
+      'Every job is different. We walk through your space, discuss the finish you want, then give you a clear written estimate—no cookie-cutter “plans,” just work sized for your project.'
   },
   {
     question: 'Can You Repair Cracked Concrete?',
@@ -59,7 +59,7 @@ const helpTopicsDesc = copy.helpTopicBlurb
 
 const helpTopics = [
   { title: 'General Information', Icon: FaBookOpen, image: siteImages.helpTopics[0] },
-  { title: 'Pricing & Quotes', Icon: FaDollarSign, image: siteImages.helpTopics[1] },
+  { title: 'Estimates & Quotes', Icon: FaClipboardList, image: siteImages.helpTopics[1] },
   { title: 'Service Process', Icon: FaCog, image: siteImages.helpTopics[2] },
   { title: 'Billing & Payments', Icon: FaCreditCard, image: siteImages.helpTopics[3] },
   { title: 'Support & Repairs', Icon: FaTools, image: siteImages.helpTopics[4] },

@@ -29,7 +29,7 @@ const contactFaqData = [
   {
     question: 'What Is The Average Cost Of A Concrete Project?',
     answer:
-      'Pricing depends on project scope, finishing level, reinforcement needs, and warranty coverage. We help you choose the right plan for your requirements.'
+      'Every job is different. We walk through your space, discuss the finish you want, then give you a clear written estimate—no cookie-cutter “plans,” just work sized for your project.'
   },
   {
     question: 'Can You Repair Cracked Concrete?',

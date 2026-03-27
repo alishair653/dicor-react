@@ -94,57 +94,22 @@ const servicesData = {
       },
       {
         title: 'Custom Concrete Solutions',
-        text: 'Tailored solutions for residential, commercial, and industrial needs.'
+        text: 'Tailored solutions for homes, driveways, and small local jobs.'
       }
     ]
   },
   projects: [
     {
-      title: 'Skyline Tower Foundation',
-      location: 'New York, USA',
-      year: '2023',
+      title: 'Residential driveway & apron',
+      location: 'Local area',
+      year: '2024',
       image: siteImages.serviceProjectPreviews[0]
     },
     {
-      title: 'Grand Highway Bridge',
-      location: 'Los Angeles, USA',
-      year: '2022',
+      title: 'Back patio slab',
+      location: 'Local area',
+      year: '2023',
       image: siteImages.serviceProjectPreviews[1]
-    }
-  ],
-  pricing: [
-    {
-      plan: 'Basic Plan',
-      price: '$2,500',
-      desc: copy.paragraphMedium,
-      bullets: [
-        'Standard Concrete Mixing',
-        'Driveway & Walkway Installation',
-        'Basic Finishing',
-        '3-Year Warranty'
-      ]
-    },
-    {
-      plan: 'Professional Plan',
-      price: '$5,500',
-      desc: copy.paragraphMedium,
-      bullets: [
-        'High-Strength Concrete Mix',
-        'Reinforced Slabs & Flooring',
-        'Stamped & Decorative Concrete',
-        '5-Year Warranty'
-      ]
-    },
-    {
-      plan: 'Enterprise Plan',
-      price: '$8,500',
-      desc: copy.paragraphMedium,
-      bullets: [
-        'Custom Concrete Solutions',
-        'Driveway & Walkway Installation',
-        'Advanced Reinforcement & Coating',
-        '8-Year Warranty'
-      ]
     }
   ],
   testimonials: [
@@ -305,65 +270,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* 6.5 Pricing — dark plans (screenshot layout) */}
-      <section className="mz-pricingDarkSection" aria-label="Pricing plans">
-        <div className="mz-pricingDarkInner">
-          <div className="mz-pricingDarkHeader">
-            <div className="mz-pricingDarkEyebrow">Transparent Pricing</div>
-            <h2 className="mz-pricingDarkHeading">
-              Affordable Concrete Solutions For Every Project
-            </h2>
-          </div>
-
-          <div className="mz-pricingDarkGrid">
-            {servicesData.pricing.map((p, idx) => {
-              const amount = p.price.replace(/^\$/, '')
-              return (
-                <article
-                  key={p.plan}
-                  className={
-                    idx === 1
-                      ? 'mz-pricingDarkCard mz-pricingDarkCardFeatured'
-                      : 'mz-pricingDarkCard'
-                  }
-                >
-                  <h3 className="mz-pricingDarkPlanTitle">{p.plan}</h3>
-                  <p className="mz-pricingDarkPlanDesc">{p.desc}</p>
-
-                  <div className="mz-pricingDarkPriceBlock">
-                    <span className="mz-pricingDarkDollar" aria-hidden="true">
-                      $
-                    </span>
-                    <span className="mz-pricingDarkAmount">{amount}</span>
-                    <span className="mz-pricingDarkPer">/ Project</span>
-                  </div>
-
-                  <ul className="mz-pricingDarkList">
-                    {p.bullets.map((b) => (
-                      <li key={b} className="mz-pricingDarkListItem">
-                        <span className="mz-pricingDarkCheck" aria-hidden="true">
-                          ✓
-                        </span>
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <button
-                    type="button"
-                    className="mz-pricingDarkCta"
-                    onClick={() => navigate('/contact-us')}
-                  >
-                    Get Started
-                  </button>
-                </article>
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* 6.6 Testimonials */}
+      {/* 6.5 Testimonials */}
       <section
         className="mz-testimonialsComplexSection mz-testimonialsComplexSection--muted"
         aria-label="What our clients say"

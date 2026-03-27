@@ -14,11 +14,10 @@ const mainNav = [
 
 const pagesDropdown = [
   { to: '/projects', label: 'Projects' },
-  { to: '/pricing', label: 'Pricing' },
   { to: '/help-center', label: 'Help Center' }
 ]
 
-const pagesSectionPaths = ['/projects', '/pricing', '/help-center']
+const pagesSectionPaths = ['/projects', '/help-center']
 
 export default function Header() {
   const location = useLocation()

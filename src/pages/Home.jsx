@@ -7,7 +7,7 @@ import {
   FaHammer,
   FaShieldAlt,
   FaUserFriends,
-  FaDollarSign,
+  FaHandshake,
   FaCogs,
   FaPhone
 } from 'react-icons/fa'
@@ -41,8 +41,8 @@ const homeData = {
       image: siteImages.heroFeatures[1]
     },
     {
-      title: 'Transparent Pricing',
-      text: 'Clear plans, fair estimates, and no surprises from start to finish.',
+      title: 'Straightforward Estimates',
+      text: 'We scope local jobs clearly and quote honestly—no pressure, no surprises.',
       image: siteImages.heroFeatures[2]
     }
   ],
@@ -107,47 +107,6 @@ const homeData = {
       desc: 'Driveways and outdoor living solutions that fit your space.',
       image: siteImages.services[11]
     }
-  ],
-  pricing: [
-    {
-      plan: 'Basic Plan',
-      price: '$2,500',
-      bestFor: 'Small Residential Projects',
-      bullets: [
-        '3-Year Warranty',
-        'Basic Finishing',
-        'Driveway & Walkway Installation',
-        'Standard Concrete Mixing'
-      ]
-    },
-    {
-      plan: 'Professional Plan',
-      price: '$5,500',
-      bestFor: 'Mid-Sized Commercial & Residential Projects',
-      bullets: [
-        '5-Year Warranty',
-        'Stamped & Decorative Concrete',
-        'Reinforced Slabs & Flooring',
-        'High-Strength Concrete Mix'
-      ]
-    },
-    {
-      plan: 'Enterprise Plan',
-      price: '$8,500',
-      bestFor: 'Small Residential Projects',
-      bullets: [
-        '8-Year Warranty',
-        'Advanced Reinforcement & Coating',
-        'Driveway & Walkway Installation',
-        'Custom Concrete Solutions'
-      ]
-    }
-  ],
-  projects: [
-    { title: 'Skyline Tower Foundation', location: 'New York, USA', year: '2023' },
-    { title: 'Grand Highway Bridge', location: 'Los Angeles, USA', year: '2022' },
-    { title: 'Modern Residential Estate', location: 'Miami, USA', year: '2021' },
-    { title: 'Industrial Warehouse Complex', location: 'Houston, USA', year: '2023' }
   ],
   testimonials: [
     {
@@ -228,7 +187,7 @@ export default function Home() {
         <div className="mz-heroFeatureStripContent">
           <div className="mz-grid mz-cols-3 mz-heroFeatureGrid">
             {homeData.features.map((f, idx) => {
-              const Icon = idx === 0 ? FaHammer : idx === 1 ? FaShieldAlt : FaDollarSign
+              const Icon = idx === 0 ? FaHammer : idx === 1 ? FaShieldAlt : FaHandshake
               return (
                 <div key={f.title} className="mz-heroFeatureCard">
                   <img className="mz-heroFeatureThumb" src={f.image} alt="" loading="lazy" />
@@ -427,7 +386,7 @@ export default function Home() {
                 <div className="mz-excellenceItemBody">
                   <div className="mz-excellenceItemTitle">Custom Concrete Solutions</div>
                   <div className="mz-excellenceItemText">
-                    Tailored solutions for residential, commercial, and industrial needs.
+                    Tailored solutions for homes, driveways, and small local jobs.
                   </div>
                 </div>
               </div>
@@ -612,7 +571,7 @@ export default function Home() {
                   <span className="mz-contactExpertiseCheck" aria-hidden="true">
                     ✓
                   </span>
-                  COMPETITIVE PRICING
+                  HONEST LOCAL ESTIMATES
                 </div>
                 <div className="mz-contactExpertiseBullet" role="listitem">
                   <span className="mz-contactExpertiseCheck" aria-hidden="true">
