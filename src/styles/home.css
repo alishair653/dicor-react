@@ -31,25 +31,27 @@
   inset: 0;
   background-image: var(
     --mz-hero-bg,
-    url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&h=1080&q=82')
+    url('/hero-gemini.png')
   );
   background-size: cover;
-  background-position: center 25%;
+  background-position: center center;
   background-repeat: no-repeat;
   transform: scale(1.02);
   z-index: 0;
 }
 
+/* Lighter wash so hero art stays clear; text side still readable */
 .mz-hero::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 1;
   background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.96) 0%,
-    rgba(255, 255, 255, 0.84) 45%,
-    rgba(15, 118, 110, 0.14) 100%
+    105deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.55) 34%,
+    rgba(255, 255, 255, 0.12) 55%,
+    rgba(255, 255, 255, 0) 72%
   );
   pointer-events: none;
 }
@@ -87,6 +89,10 @@
   color: var(--text-h);
   line-height: 1.05;
   overflow-wrap: anywhere;
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 1),
+    0 1px 2px rgba(255, 255, 255, 0.85),
+    0 0 20px rgba(255, 255, 255, 0.55);
 }
 
 .mz-heroSubtitle {
@@ -94,6 +100,9 @@
   color: var(--muted);
   max-width: 560px;
   line-height: 1.7;
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.95),
+    0 1px 2px rgba(255, 255, 255, 0.7);
 }
 
 .mz-heroTopRow {
@@ -1847,7 +1856,7 @@
   }
 
   .mz-hero::before {
-    background-position: center 18%;
+    background-position: center center;
   }
 
   .mz-heroTopRow {

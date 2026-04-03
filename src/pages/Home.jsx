@@ -93,8 +93,8 @@ const homeData = {
       image: siteImages.services[8]
     },
     {
-      title: 'Foundations & Structural Concrete',
-      desc: 'Foundations and structural concrete built for strength.',
+      title: 'Structural Concrete & Slabs',
+      desc: 'Slabs and structural concrete built for strength where your project needs it.',
       image: siteImages.services[9]
     },
     {
@@ -137,9 +137,9 @@ export default function Home() {
           <div className="mz-heroTopRow">
             <div className="mz-heroLeft">
               <div className="mz-heroEyebrowPill">BUILDING WITH CONFIDENCE</div>
-              <h1 className="mz-heroTitle">Solid Foundations, Lasting Results</h1>
+              <h1 className="mz-heroTitle">Concrete Solutions You Can Trust</h1>
               <p className="mz-heroSubtitle">
-                Our service is driven by quality, safety, and attention to detail. We focus on consistent delivery so your project stands strong for years.
+                Driveways, patios, walkways, sealing, repair, and flatwork—quality concrete work for homes and small businesses, done right.
               </p>
 
               <div className="mz-heroActionRow">
@@ -175,7 +175,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mz-heroClientsText">
-                Our service is driven by quality, safety, and attention to detail. We focus on consistent delivery so your project stands strong for years.
+                Local concrete solutions—from sealing and repairs to new flatwork—with clear communication and workmanship you can see.
               </div>
             </div>
           </div>
@@ -220,12 +220,12 @@ export default function Home() {
             <div className="mz-heroPromoContent">
               <div className="mz-heroPromoEyebrow">TRUSTED CONCRETE EXPERTS</div>
               <h2 className="mz-heroPromoTitle">
-                Precision, Durability,
+                Concrete Work That
                 <br />
-                And Innovation In Every Structure.
+                Looks Good And Lasts.
               </h2>
               <p className="mz-heroPromoText">
-                Our service is driven by quality, safety, and attention to detail. We focus on consistent delivery so your project stands strong for years.
+                We focus on the concrete jobs homeowners and small businesses need most: driveways, patios, walkways, sealing, and repairs—done carefully and on schedule.
               </p>
 
               <div className="mz-heroPromoButtons">

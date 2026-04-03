@@ -21,7 +21,7 @@ export const copy = {
   helpTopicBlurb:
     'Find answers about quotes, scheduling, billing, and how we support your project from start to finish.',
   faqServicesFull:
-    'We provide tailored concrete solutions including pouring, foundations, driveways, sealing, repair, and decorative finishes. Every quote is scoped to your site, timeline, and budget, with clear milestones from pour to final walkthrough.',
+    'We provide tailored concrete solutions including pouring, driveways, patios, walkways, sealing, repair, slabs, and decorative finishes. Every quote is scoped to your site, timeline, and budget, with clear milestones from pour to final walkthrough.',
   stillHaveQuestions:
     'Reach out by phone or message—our team will point you to the right service, documentation, or next step.',
   story2010:

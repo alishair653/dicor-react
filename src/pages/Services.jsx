@@ -65,8 +65,8 @@ const servicesData = {
       image: siteImages.services[8]
     },
     {
-      title: 'Foundations & Structural Concrete',
-      desc: 'Foundations and structural concrete built for strength.',
+      title: 'Structural Concrete & Slabs',
+      desc: 'Slabs and structural concrete built for strength where your project needs it.',
       image: siteImages.services[9]
     },
     {

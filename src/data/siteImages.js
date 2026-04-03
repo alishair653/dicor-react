@@ -11,9 +11,6 @@ export function cssUrl(u) {
   return `url("${String(u).replace(/\\/g, '\\\\').replace(/"/g, '\\"')}")`
 }
 
-/** Wide hero — residential driveway / flatwork, sharp & simple. */
-const heroStock = img('photo-1621905251189-08b45d6a269e', 1920, 1080)
-
 /** About mission / Founder — human portrait (professional headshot). */
 const ceoPortrait = img('photo-1519085360753-af0119f7cbe7', 900, 700)
 
@@ -33,7 +30,8 @@ const serviceCardImages = [
 ]
 
 export const siteImages = {
-  heroBackground: heroStock,
+  /** Full-width hero art (root `public/`). */
+  heroBackground: '/hero-gemini.png',
   heroPromo: local('image1.jpeg'),
   videoCard: local('image2.jpeg'),
   videoHeroPoster: local('image2.jpeg'),
